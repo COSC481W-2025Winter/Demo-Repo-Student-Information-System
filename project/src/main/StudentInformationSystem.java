@@ -25,10 +25,21 @@ public class StudentInformationSystem {
         student2.addGrade("Math", 78);
         student2.addGrade("Science", 88);
 
-// View grades feature
+        // View grades feature
         System.out.println("\nViewing Grades:");
         student1.displayGrades();
         student2.displayGrades();
+
+        // Teacher updates grades
+        System.out.println("\nTeacher Updating Grades:");
+        teacher1.updateStudentGrade(student1, "Math", 92);
+        teacher1.updateStudentGrade(student2, "Science", 85);
+
+        // View grades feature
+        System.out.println("\nViewing Grades:");
+        student1.displayGrades();
+        student2.displayGrades();
+
 
     }
 }
