@@ -19,10 +19,27 @@ public class StudentInformationSystem {
 
         System.out.println("Student Information System initialized.");
 
+        // Adding grades
+        student1.addGrade("Math", 85);
+        student1.addGrade("Science", 90);
+        student2.addGrade("Math", 78);
+        student2.addGrade("Science", 88);
+
+        // View grades feature
+        System.out.println("\nViewing Grades:");
+        student1.displayGrades();
+        student2.displayGrades();
+
         // Teacher updates grades
         System.out.println("\nTeacher Updating Grades:");
         teacher1.updateStudentGrade(student1, "Math", 92);
         teacher1.updateStudentGrade(student2, "Science", 85);
+
+        // View grades feature
+        System.out.println("\nViewing Grades:");
+        student1.displayGrades();
+        student2.displayGrades();
+
 
     }
 }
