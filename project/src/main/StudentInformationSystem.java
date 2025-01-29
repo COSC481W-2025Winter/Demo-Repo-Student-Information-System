@@ -18,5 +18,11 @@ public class StudentInformationSystem {
         Teacher teacher1 = new Teacher("T001", "Professor Smith");
 
         System.out.println("Student Information System initialized.");
+
+        // Teacher updates grades
+        System.out.println("\nTeacher Updating Grades:");
+        teacher1.updateStudentGrade(student1, "Math", 92);
+        teacher1.updateStudentGrade(student2, "Science", 85);
+
     }
 }

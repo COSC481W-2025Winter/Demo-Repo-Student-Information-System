@@ -16,4 +16,10 @@ public class Teacher {
     public String getName() {
         return name;
     }
+
+    public void updateStudentGrade(Student student, String course, int newGrade) {
+        student.addGrade(course, newGrade);
+        System.out.println("Updated grade: " + student.getName() + " - " + course + " = " + newGrade);
+    }
+
 }
