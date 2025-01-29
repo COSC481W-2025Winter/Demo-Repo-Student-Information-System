@@ -29,4 +29,12 @@ public class Student {
     public Map<String, Integer> getGrades() {
         return grades;
     }
+
+    public void displayGrades() {
+        System.out.println("Grades for " + name + ":");
+        for (Map.Entry<String, Integer> entry : grades.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+
 }
